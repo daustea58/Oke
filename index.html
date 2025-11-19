@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Tournament ML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">ML Tournament</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#register">Daftar Tim</a></li>
+            <li><a href="#teams">Tim Terdaftar</a></li>
+            <li><a href="#schedule">Jadwal</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <h1>Mini Tournament Mobile Legends</h1>
+        <p>Buat timmu, daftarkan, dan menangkan turnamen!</p>
+        <a href="#register" class="button">Daftar Sekarang</a>
+    </section>
+
+    <!-- REGISTER SECTION -->
+    <section id="register" class="section">
+        <h2>Form Pendaftaran Tim</h2>
+        <form id="teamForm">
+            <input type="text" id="teamName" placeholder="Nama Tim" required>
+            <input type="text" id="leaderName" placeholder="Nama Kapten" required>
+            <input type="text" id="contact" placeholder="Kontak (WA/ID ML)" required>
+            <button type="submit">Daftar</button>
+        </form>
+    </section>
+
+    <!-- TEAM LIST SECTION -->
+    <section id="teams" class="section">
+        <h2>Daftar Tim Terdaftar</h2>
+        <ul id="teamList" class="team-list"></ul>
+    </section>
+
+    <!-- SCHEDULE SECTION -->
+    <section id="schedule" class="section">
+        <h2>Jadwal Pertandingan</h2>
+        <div class="schedule-box">
+            <p>Match 1: Tim 1 vs Tim 2 — 19.00 WIB</p>
+            <p>Match 2: Tim 3 vs Tim 4 — 19.30 WIB</p>
+            <p>Match 3: Final — 20.00 WIB</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
